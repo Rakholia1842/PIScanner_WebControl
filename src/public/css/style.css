@@ -1,0 +1,9 @@
+.arrange-horizontally > * {
+    display: inline-block;
+    text-align: center;
+}
+.arrange-vertically > * {
+    display: block;
+}
+
+.highlight{background-color:#36FF39}

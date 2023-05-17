@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="/static/css/style.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-2.2.3.min.js"></script>
+	<script src="static/js/uniden996p2controls.js" type="text/javascript"></script>
+	<script src="static/js/streamManagement.js" type="text/javascript"></script>
+	<script src="static/js/serialManagement.js" type="text/javascript"></script>
+</head>
+	<body>
+		<div id="header">BCD996P2<br>
+			<p id="display"></p>
+			<button id="button_display_refresh">Disable Display Refresh</button>
+            <div class="arrange-horizontally">
+                <span id="display_volume">Volumne: 0</span>
+                <button id="button_vol_down">-</button>
+                <button id="button_vol_up">+</button>
+            </div>
+            <div class="arrange-horizontally">
+                <span id="display_squelch">Squelch: 0</span>
+                <button id="button_squelch_down">-</button>
+                <button id="button_squelch_up">+</button>
+            </div>
+		</div>
+		
+	<div  class="arrange-horizontally">
+		<div class="arrange-vertically">
+			<button id="key_PRI">PRI</button>
+			<button id="key_WX">WX</button>
+			<button id="key_GPS">GPS</button>
+			<button id="key_MENU">MENU</button>
+			<button id="key_LO">L/O</button>
+		</div>
+		<div class="arrange-horizontally"> 
+			<div class="arrange-vertically">
+				<button id="key_1">1</button>
+				<button id="key_4">4</button>
+				<button id="key_7">7</button>
+				<button id="key_dot">. No</button>
+			</div>
+			<div class="arrange-vertically">
+				<button id="key_2">2</button>
+				<button id="key_5">5</button>
+				<button id="key_8">8</button>
+				<button id="key_0">0</button>
+			</div>
+			<div class="arrange-vertically">
+				<button id="key_3">3</button>
+				<button id="key_6">6</button>
+				<button id="key_9">9</button>
+				<button id="key_E">E Yes</button>
+			</div>
+			<div class="arrange-vertically"> 
+				<button id="key_SCAN">Scan/Search</button>
+				<button id="key_HOLD">Hold/Resume</button>
+				<button id="key_longpress">short_press</button>
+				<button id="key_SQ_press">Close Call</button>
+				<button id="key_vol_press">light</button>
+			</div>
+            <div class="arrange-vertically">
+                <button id="key_VFO_RIGHT">VFO Right</button>
+                <button id="key_function">Function</button>
+                <button id="key_VFO_LEFT">VFO Left</button>
+            </div>
+		</div>
+	</div>
+	<br>	
+		<div id="stream_config" visible="false">
+			<span id="active_stream_url">Stream Not Active.</span>
+			<button id="button_refresh_stream_status">Refresh Stream Status</button> 
+			<br>
+			<button id="button_stream_here">Stream to This Device</button>
+			<input type="text" id="stream_url_address_input">
+			<button id="button_stream_to_input">Stream to input</button>
+			<button id="button_disconnect_stream">Disconnect Stream</button>
+		</div>
+	<br>
+		<div id="controller_config">
+			<span id="span_serial_status">Not connected to scanner</span>
+			<button id="refresh_serial_status">Refresh Connection Status</button>
+			<br>
+			<button id="button_connect_serial">Connect</button>
+			<button id="button_disconnect_serial">Disconnect</button>
+		</div>
+
+</body>
+</html>
